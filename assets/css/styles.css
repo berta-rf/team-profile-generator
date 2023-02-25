@@ -1,7 +1,7 @@
 
 body {
     background: linear-gradient(rgb(241, 254, 172), rgb(223, 226, 178), rgb(205, 199, 182), rgb(186, 172, 186), rgb(165, 146, 189));
-    height: 100vh; 
+    height: 100vh;
 }
 
 h1 {
@@ -26,4 +26,11 @@ h2.card-title {
 
 li.list-group-item {
     font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+    
+    body {
+        height: 100%;
+    }
 }

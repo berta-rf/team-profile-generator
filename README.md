@@ -10,6 +10,10 @@ This Team Profile Generator is a command-line application that will take in info
 
 </br>
 
+<img src="./assets/images/webScreenshot.png"  width="45%" height="15%">
+
+</br>
+
 ### Table of Contents
 
 - [🛠 Installation](#-installation)
@@ -41,8 +45,9 @@ The application is invoked by entering the following command on your terminal:
 node index
 ```
 
-  
-![App Screenshot](./assets/images/screenshot.png)
+</br>
+
+<img src="./assets/images/screenshot.png"  width="45%" height="15%">
 
 </br>
 
