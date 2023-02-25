@@ -111,7 +111,7 @@ function promptUser() {
         inquirer
         .prompt(teamForm.manager)
         .then(res => {
-            // populate manager info
+            // populate manager info and add to team array
             team.push(new Manager(res.name, res.id, res.email, res.officeNumber));
             promptForNextEmployee();
         })
@@ -125,7 +125,7 @@ function promptUser() {
                 } else if (res.role === "Intern") {
                     promptForIntern();
                 } else {
-                    console.log(team);
+                    // calls function to generate html with team input and write on team.html
                     createTeam(team);
                 }
                 
@@ -134,9 +134,9 @@ function promptUser() {
 
         const promptForEngineer = () => {
             inquirer
-            .prompt(teamForm.engineer)
+            .prompt(teamForm.engineer) // prompts engineer questions
             .then(res => {
-                // add new engineer to team array
+            // populate engineer info and add to team array
                 team.push(new Engineer(res.name, res.id, res.email, res.github));
                 promptForNextEmployee();
             })
@@ -144,9 +144,9 @@ function promptUser() {
 
         const promptForIntern = () => {
             inquirer
-            .prompt(teamForm.intern)
+            .prompt(teamForm.intern) // prompts intern questions
             .then(res => {
-                // add new intern to team array
+            // populate intern info and add to team array
                 team.push(new Intern(res.name, res.id, res.email, res.school));
                 promptForNextEmployee();
             })
