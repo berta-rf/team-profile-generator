@@ -7,8 +7,7 @@ import * as fs from 'fs';
 import path from 'path';
 import emailValidator from 'email-validator';
 
-const OUTPUT_DIR = path.resolve(__dirname, "output");
-const outputPath = path.join(OUTPUT_DIR, "team.html");
+const outputPath = "./output/team.html";
 
 import { render } from "./src/page-template.js";
 
@@ -121,14 +120,13 @@ function promptUser() {
             inquirer
             .prompt(teamForm.nextEmployee)
             .then(res => {
-                console.log(res)
                 if (res.role === "Engineer") {
                     promptForEngineer();
                 } else if (res.role === "Intern") {
                     promptForIntern();
                 } else {
                     console.log(team);
-                    render(team);
+                    createTeam(team);
                 }
                 
             })
@@ -159,11 +157,15 @@ function promptUser() {
 promptUser();
 
 
-// function createTeam() {
+function createTeam(team) {
+  
+    fs.writeFile(outputPath, render(team), (err) => {
+        if (err) {
+        console.log(err);
+        } else {
+        console.log("File written successfully");
+        }
+    });
 
-//     promptUser()
-
-//      fs.writeFile(generateTeam(team))???
-
-// }
+}
 
