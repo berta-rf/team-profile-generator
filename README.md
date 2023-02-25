@@ -6,7 +6,7 @@
 </br>
 
 ## 🎯 Description
-This Team Profile Generator is a command-line application that will take in information about employees on a software engineering team through prompts, and will then generate an HTML webpage that displays summaries for each member of the team.
+This Team Profile Generator is a command-line application that will take in information about employees on a software engineering team through prompts, and will then generate an HTML webpage that displays summaries for each member of the team. The webpage offers the team's manager basic info on their team members and quick access to their emails and GitHub profiles.
 
 </br>
 

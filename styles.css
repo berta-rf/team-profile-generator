@@ -1,1 +1,29 @@
 
+body {
+    background: linear-gradient(rgb(241, 254, 172), rgb(223, 226, 178), rgb(205, 199, 182), rgb(186, 172, 186), rgb(165, 146, 189));
+    height: 100vh; 
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card-header {
+    background-color: rgba(195, 181, 213, 0.55);
+}
+
+.card-body {
+    background-color: rgba(237, 244, 206, 0.392);
+}
+
+h2.card-title {
+    font-weight: bold;
+}
+
+li.list-group-item {
+    font-size: 1.5rem;
+}
