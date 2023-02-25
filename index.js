@@ -156,7 +156,7 @@ function promptUser() {
 
 promptUser();
 
-
+// Function to render hmtl in team.html file
 function createTeam(team) {
   
     fs.writeFile(outputPath, render(team), (err) => {
